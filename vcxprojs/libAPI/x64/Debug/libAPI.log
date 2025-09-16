@@ -1,3 +1,648 @@
-﻿  
-  C:\Programs\GitHub\gpuPackage\microImageLib\vcxprojs\libAPI>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I..\..\src -I..\..\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /FS /Zi /RTC1 /MDd " -o x64\Debug\api_subfunc.cu.obj "C:\Programs\GitHub\gpuPackage\microImageLib\src\api_subfunc.cu" -clean 
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Compiling CUDA source file ..\..\src\api_subfunc.cu...
+  
+  C:\Users\RBO\repos\microImageLib\vcxprojs\libAPI>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\bin\HostX64\x64" -x cu   -I..\..\lib -I..\..\src -I..\..\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -allow-unsupported-compiler -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_WINDLL -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o C:\Users\RBO\repos\microImageLib\vcxprojs\libAPI\x64\Debug\api_subfunc.cu.obj "C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu" 
+C:\Users\RBO\repos\microImageLib\include\cukernel.cuh(496): warning #1215-D: function "tex3D(texture<T, 3, cudaReadModeElementType>, float, float, float) [with T=float]"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\texture_fetch_functions.h(267): here was declared deprecated
+  
+C:\Users\RBO\repos\microImageLib\include\cukernel.cuh(546): warning #1215-D: function "tex3D(texture<T, 3, cudaReadModeElementType>, float, float, float) [with T=float]"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\texture_fetch_functions.h(267): here was declared deprecated
+  
+C:\Users\RBO\repos\microImageLib\include\cukernel.cuh(568): warning #1215-D: function "tex2D(texture<T, 2, cudaReadModeElementType>, float, float) [with T=float]"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\texture_fetch_functions.h(198): here was declared deprecated
+  
+C:\Users\RBO\repos\microImageLib\include\cukernel.cuh(589): warning #1215-D: function "tex2D(texture<T, 2, cudaReadModeElementType>, float, float) [with T=float]"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\texture_fetch_functions.h(198): here was declared deprecated
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1299): warning #177-D: variable "syz" was declared but never referenced
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1299): warning #177-D: variable "syz2" was declared but never referenced
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1846): warning #174-D: expression has no effect
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning #177-D: variable "sizex1" was declared but never referenced
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning #177-D: variable "sizex2" was declared but never referenced
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning #177-D: variable "sizey1" was declared but never referenced
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning #177-D: variable "sizey2" was declared but never referenced
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning #177-D: variable "sizez1" was declared but never referenced
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning #177-D: variable "sizez2" was declared but never referenced
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning #177-D: variable "sizex" was declared but never referenced
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning #177-D: variable "sizey" was declared but never referenced
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning #177-D: variable "sizez" was declared but never referenced
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2171): warning #177-D: variable "imSizeCropz" was declared but never referenced
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2172): warning #177-D: variable "imoz" was declared but never referenced
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2313): warning #174-D: expression has no effect
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2319): warning #174-D: expression has no effect
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3525): warning #550-D: variable "start" was set but never used
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3525): warning #550-D: variable "end" was set but never used
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3597): warning #550-D: variable "start" was set but never used
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3597): warning #550-D: variable "end" was set but never used
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3688): warning #550-D: variable "start" was set but never used
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3688): warning #550-D: variable "end" was set but never used
+  
+C:\Users\RBO\repos\microImageLib\include\cukernel.cuh(517): warning #1215-D: function "tex3D(texture<T, 3, cudaReadModeElementType>, float, float, float) [with T=unsigned short]"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\texture_fetch_functions.h(267): here was declared deprecated
+            detected during:
+              instantiation of "void affinetransformkernel(T *, long long, long long, long long, long long, long long, long long) [with T=unsigned short]" 
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(946): here
+              instantiation of "void affineTransform(T *, long long, long long, long long, long long, long long, long long) [with T=unsigned short]" 
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(949): here
+  
+C:\Users\RBO\repos\microImageLib\include\cukernel.cuh(519): warning #1215-D: function "tex3D(texture<T, 3, cudaReadModeElementType>, float, float, float) [with T=float]"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\texture_fetch_functions.h(267): here was declared deprecated
+            detected during:
+              instantiation of "void affinetransformkernel(T *, long long, long long, long long, long long, long long, long long) [with T=unsigned short]" 
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(946): here
+              instantiation of "void affineTransform(T *, long long, long long, long long, long long, long long, long long) [with T=unsigned short]" 
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(949): here
+  
+C:\Users\RBO\repos\microImageLib\include\cukernel.cuh(517): warning #1215-D: function "tex3D(texture<T, 3, cudaReadModeElementType>, float, float, float) [with T=unsigned short]"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\texture_fetch_functions.h(267): here was declared deprecated
+            detected during:
+              instantiation of "void affinetransformkernel(T *, long long, long long, long long, long long, long long, long long) [with T=float]" 
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(946): here
+              instantiation of "void affineTransform(T *, long long, long long, long long, long long, long long, long long) [with T=float]" 
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2355): here
+  
+C:\Users\RBO\repos\microImageLib\include\cukernel.cuh(519): warning #1215-D: function "tex3D(texture<T, 3, cudaReadModeElementType>, float, float, float) [with T=float]"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\texture_fetch_functions.h(267): here was declared deprecated
+            detected during:
+              instantiation of "void affinetransformkernel(T *, long long, long long, long long, long long, long long, long long) [with T=float]" 
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(946): here
+              instantiation of "void affineTransform(T *, long long, long long, long long, long long, long long, long long) [with T=float]" 
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2355): here
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1846): warning #174-D: expression has no effect
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2313): warning #174-D: expression has no effect
+  
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2319): warning #174-D: expression has no effect
+  
   api_subfunc.cu
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(62): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(85): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(307): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(307): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(307): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(309): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(316): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(316): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(316): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(318): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(326): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(326): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(326): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(328): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(347): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(347): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(347): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(349): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(655): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(655): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(661): warning C4244: '=': conversion from 'double' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(663): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(663): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(675): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(675): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(681): warning C4244: '=': conversion from 'double' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(683): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(683): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(694): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(694): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(700): warning C4244: '=': conversion from 'double' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(702): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(702): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(744): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(745): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(746): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(755): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(756): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(757): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(766): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(767): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(768): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(893): warning C4996: 'cudaBindTextureToArray': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(894): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(905): warning C4996: 'cudaBindTextureToArray': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(906): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(917): warning C4996: 'cudaBindTextureToArray': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(918): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(922): warning C4996: 'cudaUnbindTexture': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(923): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(927): warning C4996: 'cudaUnbindTexture': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(928): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(932): warning C4996: 'cudaUnbindTexture': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(933): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(939): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(964): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(964): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(967): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(998): warning C4996: 'cudaBindTextureToArray': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1003): warning C4996: 'cudaUnbindTexture': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1009): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1009): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1011): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1023): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1023): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1024): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1024): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1024): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1024): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1026): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1119): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1119): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1119): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1131): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1131): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1131): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1131): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1131): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1131): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1672): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1672): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1672): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1845): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1845): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1845): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1845): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1846): warning C4551: function call missing argument list
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1843): warning C4996: 'cudaMemcpyToArray': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1915): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1916): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1923): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1950): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1952): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1965): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1965): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1965): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1965): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1974): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1938): warning C4996: 'cudaMemcpyToArray': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2006): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2007): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2052): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2053): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2060): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2086): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2096): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2096): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2096): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2096): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2105): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2075): warning C4996: 'cudaMemcpyToArray': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2129): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2130): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2137): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2137): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2144): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2144): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2150): warning C4244: 'argument': conversion from 'double' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2150): warning C4244: 'argument': conversion from 'double' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning C4101: 'sizex': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning C4101: 'sizez': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning C4101: 'sizey2': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning C4101: 'sizey': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning C4101: 'sizex2': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2171): warning C4101: 'imSizeCropz': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning C4101: 'sizex1': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning C4101: 'sizez1': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2172): warning C4101: 'imoz': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning C4101: 'sizez2': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2164): warning C4101: 'sizey1': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2279): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2280): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2287): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2313): warning C4551: function call missing argument list
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2318): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2318): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2318): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2318): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2319): warning C4551: function call missing argument list
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2324): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2302): warning C4996: 'cudaMemcpyToArray': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2316): warning C4996: 'cudaMemcpyToArray': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2350): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2366): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2398): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2398): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2398): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2398): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2398): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2398): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2430): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2456): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2467): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2468): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2475): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2475): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2475): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2482): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2482): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2482): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2488): warning C4244: 'argument': conversion from 'double' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2488): warning C4244: 'argument': conversion from 'double' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2488): warning C4244: 'argument': conversion from 'double' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2593): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2594): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2603): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2603): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2603): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2615): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2615): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2615): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2620): warning C4244: 'argument': conversion from 'double' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2620): warning C4244: 'argument': conversion from 'double' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2620): warning C4244: 'argument': conversion from 'double' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2792): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2831): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2852): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2863): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2919): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2934): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2939): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(2944): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3055): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3095): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3117): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3130): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3186): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3201): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3206): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3211): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3298): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3298): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3298): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3334): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3334): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3334): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3335): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3335): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3335): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3336): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3336): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3336): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3395): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3395): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3395): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3396): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3396): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3396): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3473): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3473): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3473): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3474): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3474): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3474): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3546): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3546): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3546): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3547): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3547): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3547): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3548): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3548): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3548): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3625): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3625): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3625): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3626): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3626): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3626): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3727): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3727): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3727): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3728): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3728): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(3728): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(246): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(246): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(250): note: see reference to function template instantiation 'void add3Dgpu<int>(int *,int *,int *,size_t,size_t,size_t)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(246): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(246): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(248): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(258): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(258): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(262): note: see reference to function template instantiation 'void addvaluegpu<int>(int *,int *,int,size_t,size_t,size_t)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(258): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(258): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(260): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(270): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(270): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(274): note: see reference to function template instantiation 'void sub3Dgpu<int>(int *,int *,int *,size_t,size_t,size_t)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(270): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(270): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(272): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(283): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(283): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(287): note: see reference to function template instantiation 'void multi3Dgpu<int>(int *,int *,int *,size_t,size_t,size_t)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(283): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(283): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(285): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(295): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(295): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(299): note: see reference to function template instantiation 'void multivaluegpu<int>(int *,int *,int,size_t,size_t,size_t)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(295): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(295): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(297): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(335): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(335): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(339): note: see reference to function template instantiation 'void div3Dgpu<int>(int *,int *,int *,size_t,size_t,size_t)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(335): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(335): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(337): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(356): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(356): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(380): note: see reference to function template instantiation 'int sumgpu<int>(int *,int)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(369): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(392): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(392): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(404): note: see reference to function template instantiation 'double sum3Dgpu<int>(int *,size_t,size_t,size_t)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(392): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(394): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(421): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(421): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(431): note: see reference to function template instantiation 'int sumgpu1D<int>(int *,size_t)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(446): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(446): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(471): note: see reference to function template instantiation 'int max3Dgpu<int>(size_t *,int *,size_t,size_t,size_t)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(446): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(448): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(451): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(479): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(479): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(483): note: see reference to function template instantiation 'void maxvalue3Dgpu<int>(int *,int *,int,size_t,size_t,size_t)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(479): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(479): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(481): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(502): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(502): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(507): note: see reference to function template instantiation 'void maxprojection<int>(int *,int *,size_t,size_t,size_t,int)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(502): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(504): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(518): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(518): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(522): note: see reference to function template instantiation 'void changestorageordergpu<int>(int *,int *,size_t,size_t,size_t,int)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(518): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(518): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(520): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(533): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(533): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(537): note: see reference to function template instantiation 'void rotbyyaxis<int>(int *,int *,size_t,size_t,size_t,int)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(533): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(533): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(535): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(830): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(830): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(834): note: see reference to function template instantiation 'void circshiftgpu<int>(int *,int *,__int64,__int64,__int64,__int64,__int64,__int64)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(830): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(830): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(832): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(841): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(841): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(845): note: see reference to function template instantiation 'void imshiftgpu<int>(int *,int *,__int64,__int64,__int64,__int64,__int64,__int64)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(841): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(841): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(843): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(862): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(862): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(864): note: see reference to function template instantiation 'void cudacopyhosttoarray<unsigned short>(cudaArray *,cudaChannelFormatDesc,unsigned short *,size_t,size_t,size_t)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(877): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(877): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(879): note: see reference to function template instantiation 'void cudacopydevicetoarray<unsigned short>(cudaArray *,cudaChannelFormatDesc,unsigned short *,size_t,size_t,size_t)' being compiled
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\cuda_runtime.h(1685): warning C4996: 'cudaBindTextureToArray': was declared deprecated
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\cuda_runtime.h(1685): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(893): note: see reference to function template instantiation 'cudaError_t cudaBindTextureToArray<float,3,cudaReadModeElementType>(const texture<float,3,cudaReadModeElementType> &,cudaArray_const_t,const cudaChannelFormatDesc &)' being compiled
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\cuda_runtime.h(1846): warning C4996: 'cudaUnbindTexture': was declared deprecated
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\cuda_runtime.h(1846): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(922): note: see reference to function template instantiation 'cudaError_t cudaUnbindTexture<float,3,cudaReadModeElementType>(const texture<float,3,cudaReadModeElementType> &)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(945): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(945): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(949): note: see reference to function template instantiation 'void affineTransform<unsigned short>(unsigned short *,__int64,__int64,__int64,__int64,__int64,__int64)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(945): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(945): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(947): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1682): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1682): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1686): note: see reference to function template instantiation 'void flipgpu<int>(int *,int *,__int64,__int64,__int64)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1682): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1682): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1684): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1698): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1698): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1702): note: see reference to function template instantiation 'void padPSFgpu<int>(int *,int *,__int64,__int64,__int64,__int64,__int64,__int64)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1698): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1698): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1700): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1721): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1721): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1725): note: see reference to function template instantiation 'void padstackgpu<int>(int *,int *,__int64,__int64,__int64,__int64,__int64,__int64)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1721): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1721): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1723): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1744): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1744): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1748): note: see reference to function template instantiation 'void cropgpu<int>(int *,int *,__int64,__int64,__int64,__int64,__int64,__int64)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1744): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1744): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1746): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1763): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1763): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1767): note: see reference to function template instantiation 'void cropgpu2<int>(int *,int *,__int64,__int64,__int64,__int64,__int64,__int64,__int64,__int64,__int64)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1763): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1763): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1765): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1787): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1787): note: the template instantiation context (the oldest one first) is
+  C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1791): note: see reference to function template instantiation 'void alignsize3Dgpu<int>(int *,int *,__int64,__int64,__int64,__int64,__int64,__int64)' being compiled
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1787): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1787): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_subfunc.cu(1789): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+  apifunc.cpp
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(62,16): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(75,21): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(74,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(84,20): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(106,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(368,10): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(369,10): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(382,10): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(383,10): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(441,15): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(441,32): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(441,49): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(442,15): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(442,33): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(442,51): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(510,18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(511,18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(513,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(547,4): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(563,4): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(584,21): warning C4244: '=': conversion from 'double' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(588,21): warning C4244: '=': conversion from 'double' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(597,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(620,15): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(620,31): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(620,55): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(635,15): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(635,39): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(635,55): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(618,4): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\apifunc.cpp(633,4): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+  api_decon.cpp
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(77,27): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(78,27): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(79,27): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(82,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(82,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(82,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(83,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(83,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(83,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(84,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(84,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(84,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(116,40): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(116,34): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(116,28): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(117,40): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(117,34): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(117,28): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(136,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(357,27): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(358,27): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(359,27): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(363,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(363,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(363,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(364,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(364,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(364,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(365,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(365,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(365,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type '__int64'
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(398,40): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(398,34): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(398,28): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(399,40): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(399,34): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(399,28): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(418,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(434,4): warning C4101: 'd_FlippedPSFSpectrum': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(753,40): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(753,34): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(753,28): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(754,40): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(754,34): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(754,28): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(773,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(789,4): warning C4101: 'd_FlippedPSFSpectrum': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(788,4): warning C4101: 'd_PSFSpectrum': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1049,14): warning C4244: '=': conversion from 'float' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1050,14): warning C4244: '=': conversion from 'float' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1051,27): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1051,58): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1051,89): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1066,14): warning C4244: '=': conversion from 'float' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1067,14): warning C4244: '=': conversion from 'float' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1068,14): warning C4244: '=': conversion from 'float' to '__int64', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1069,15): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1069,34): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1069,53): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1080,27): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1081,27): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1082,27): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1112,40): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1112,34): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1112,28): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1113,40): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1113,34): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1113,28): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1171,2): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(1202,2): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+  api_reg.cpp
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(72,2): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(100,2): warning C4996: 'cudaThreadSynchronize': was declared deprecated
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(165,15): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(199,18): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(221,49): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(222,49): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(169,8): warning C4101: 'shiftXY0': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(250,32): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(250,83): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(373,15): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(424,24): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(425,24): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(426,25): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(438,24): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(439,24): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(440,25): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(467,18): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(555,24): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(556,24): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(557,25): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(571,24): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(572,24): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(573,25): warning C4244: '=': conversion from '__int64' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(383,8): warning C4101: 'shiftZ': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(383,16): warning C4101: 'shiftXY': unreferenced local variable
+C:\Users\RBO\repos\microImageLib\src\api_reg.cpp(381,15): warning C4101: 'im2DSize': unreferenced local variable
+  Generating Code...
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(873,1): warning C4700: uninitialized local variable 'd_StackB' used
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(884,1): warning C4700: uninitialized local variable 'd_FlippedPSFBSpectrum' used
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(884,1): warning C4700: uninitialized local variable 'd_FlippedPSFASpectrum' used
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(884,1): warning C4700: uninitialized local variable 'd_PSFBSpectrum' used
+C:\Users\RBO\repos\microImageLib\src\api_decon.cpp(884,1): warning C4700: uninitialized local variable 'd_PSFASpectrum' used
+  api_powell.c
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(131,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(132,34): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(132,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(141,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(143,8): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(147,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(153,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(157,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(159,7): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(205,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(211,9): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(211,9): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(210,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(212,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(227,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(233,5): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(242,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(294,35): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(317,22): warning C4098: 'powell': 'void' function returning a value
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(328,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(331,29): warning C4098: 'powell': 'void' function returning a value
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(332,24): warning C4098: 'powell': 'void' function returning a value
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(340,24): warning C4098: 'powell': 'void' function returning a value
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(342,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(348,62): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(355,30): warning C4098: 'powell': 'void' function returning a value
+C:\Users\RBO\repos\microImageLib\src\api_powell.c(356,25): warning C4098: 'powell': 'void' function returning a value
+     Creating library ..\..\bin\win\libapi.lib and object ..\..\bin\win\libapi.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  libAPI.vcxproj -> C:\Users\RBO\repos\microImageLib\bin\win\libapi.dll
+  copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\cudart*.dll" "..\..\bin\win\"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\cudart32_110.dll
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\cudart64_110.dll
+          2 file(s) copied.
